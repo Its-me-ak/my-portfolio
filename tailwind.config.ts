@@ -9,8 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        vscodeBg: "#1e1e1e",
+        vscodeSidebar: "#252526",
+        vscodeBorder: "#3c3c3c",
+        vscodeText: "#d4d4d4",
+        vscodeAccent: "#007acc"
       },
     },
   },
