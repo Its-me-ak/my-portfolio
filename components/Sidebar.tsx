@@ -7,7 +7,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <aside className="w-72 bg-vscodeSidebar border-r border-vscodeBorder p-4">
+    <aside className="w-72 bg-vscodeSidebar border-r border-vscodeBorder p-4 pt-8">
       <h2 className="text-lg font-bold">EXPLORER</h2>
       <div className="mt-4">
         <p className="text-sm text-gray-400">About</p>

@@ -1,12 +1,11 @@
+import Heading from "@/components/Heading";
 import SocialLinks from "@/components/SocialLinks";
 
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-3xl font-bold">Raj Savaliya</h1>
-      <p className="text-lg text-gray-400">Software Development Engineer</p>
-
+      <Heading/>
       <div className="mt-6">
         <h2 className="text-lg font-bold mb-2">Start</h2>
         <ul className="space-y-2">

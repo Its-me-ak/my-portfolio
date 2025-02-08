@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import TopHeader from "@/components/TopHeader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
+        <TopHeader />
         <div className="flex h-screen bg-vscodeBg text-vscodeText">
           <Sidebar />
           <main className="flex-grow p-6">{children}</main>

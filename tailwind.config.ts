@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         vscodeBg: "#1e1e1e",
+        vscodeHeader: "#3c3c3c",
         vscodeSidebar: "#252526",
         vscodeBorder: "#3c3c3c",
         vscodeText: "#d4d4d4",
