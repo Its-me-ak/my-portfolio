@@ -1,8 +1,8 @@
 const Heading = () => {
   return (
-    <header className="p-4">
-      <h1 className="text-xl font-semibold">Mohd Aquib</h1>
-      <p className="text-sm text-gray-400">Frontend Developer</p>
+    <header className="py-4">
+      <h1 className="text-5xl font-semibold">Mohd Aquib</h1>
+      <p className="text-xl text-gray-400">Website Designer & Frontend Developer</p>
     </header>
   );
 };

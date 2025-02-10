@@ -4,7 +4,6 @@ import "./globals.css";
 import "@fontsource/fira-code";
 import Sidebar from "@/components/Sidebar";
 import TopHeader from "@/components/TopHeader";
-import LeftSideNav from "@/components/LeftSideNav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +20,6 @@ export default function RootLayout({
       <body>
         <TopHeader />
         <div className="flex h-screen bg-vscodeBg text-vscodeText">
-          <LeftSideNav/>
           <Sidebar />
             <main className="flex-grow p-6">{children}</main>
         </div>

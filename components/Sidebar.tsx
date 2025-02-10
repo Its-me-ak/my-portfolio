@@ -2,16 +2,21 @@
 import { useState } from "react";
 import { FaRegCopy, FaGithub, FaRegCircleUser } from "react-icons/fa6";
 import { VscSearch, VscSourceControl, VscExtensions } from "react-icons/vsc";
-import { SiPostman } from "react-icons/si";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaAngleDown, FaAngleRight, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiReact, SiAngular } from "react-icons/si";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiAngular,
+  SiPostman,
+} from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 import Image from "next/image";
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [openSections, setOpenSections] = useState({
     about: true,
     contact: true,
@@ -82,11 +87,11 @@ const Sidebar = () => {
           {openSections.about && (
             <ul className=" space-y-2 text-sm">
               <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
-                <FaHtml5 className="text-[#e34c26]" />
+                <FaHtml5 className="text-[#e65100]" />
                 <span className="ml-2">index.html</span>
               </li>
               <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
-                <FaCss3 className="text-[#264de4]" />
+                <FaCss3 className="text-[#42a5f5]" />
                 <span className="ml-2">about.css</span>
               </li>
               <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
