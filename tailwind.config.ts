@@ -9,12 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        vscodeBg: "#1e1e1e",
-        vscodeHeader: "#3c3c3c",
-        vscodeSidebar: "#252526",
+        vscodeBg: "#193549",
+        vscodeHeader: "#1f4662",
+        vscodeSidebar: "#15232d",
         vscodeBorder: "#3c3c3c",
         vscodeText: "#d4d4d4",
-        vscodeAccent: "#007acc"
+        vscodeAccent: "#007acc",
       },
     },
   },

@@ -34,7 +34,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Left SideNav */}
-      <div className="pt-10 bg-[#333] min-h-screen flex flex-col justify-between p-3 items-center">
+      <div className="pt-10 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center">
         <div>
           <ul className="space-y-5">
             <li className="cursor-pointer" onClick={toggleSidebar}>
@@ -86,23 +86,23 @@ const Sidebar = () => {
           </button>
           {openSections.about && (
             <ul className=" space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <FaHtml5 className="text-[#e65100]" />
                 <span className="ml-2">index.html</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <FaCss3 className="text-[#42a5f5]" />
                 <span className="ml-2">about.css</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <SiJavascript className="text-[#f0db4f]" />
                 <span className="ml-2">skills.js</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <SiTypescript className="text-[#007acc]" />
                 <span className="ml-2">experirience.ts</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <Image
                   src={
                     "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
@@ -128,7 +128,7 @@ const Sidebar = () => {
           </button>
           {openSections.contact && (
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <MdEmail className="text-red-400" />
                 <span className="ml-2">Email.tsx</span>
               </li>
@@ -147,15 +147,15 @@ const Sidebar = () => {
           </button>
           {openSections.misc && (
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <CgFileDocument className="text-gray-400" />
                 <span className="ml-2">Gaming.txt</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <SiReact className="text-blue-400" />
                 <span className="ml-2">Anime.jsx</span>
               </li>
-              <li className="flex items-center hover:bg-[#333] cursor-pointer px-5 py-1">
+              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <SiAngular className="text-red-500" />
                 <span className="ml-2">Learning.tsx</span>
               </li>
