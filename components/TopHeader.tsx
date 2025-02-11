@@ -1,19 +1,20 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 const TopHeader = () => {
   return (
     <div className='flex justify-between items-center ps-2 bg-vscodeHeader fixed w-full h-6'>
 
       <ul className='flex list-none gap-3 capitalize items-center text-sm'>
-        <li>
+        <Link href={'/'}>
           <Image src="https://img.icons8.com/color/96/000000/visual-studio-code-2019.png" alt="vs code logo" width={15} height={15} />
-        </li>
-        <li>about</li>
-        <li>Experience</li>
-        <li>skills</li>
-        <li>Projects</li>
-        <li>contact</li>
-        <li>hobbies</li>
+        </Link>
+        <Link href={'/about'}>about</Link>
+        <Link href={'/experience'}>Experience</Link>
+        <Link href={'/skills'}>skills</Link>
+        <Link href={'/projects'}>Projects</Link>
+        <Link href={'/contact'}>contact</Link>
+        <Link href={'/hobbies'}>hobbies</Link>
       </ul>
       <div>
         <ul>

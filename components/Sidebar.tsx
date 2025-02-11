@@ -3,7 +3,14 @@ import { useState } from "react";
 import { FaRegCopy, FaGithub, FaRegCircleUser } from "react-icons/fa6";
 import { VscSearch, VscSourceControl, VscExtensions } from "react-icons/vsc";
 import { IoSettingsOutline } from "react-icons/io5";
-import { FaAngleDown, FaAngleRight, FaHtml5, FaCss3 } from "react-icons/fa";
+import {
+  FaAngleDown,
+  FaAngleRight,
+  FaHtml5,
+  FaCss3,
+  FaVuejs,
+  FaNodeJs,
+} from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
@@ -12,8 +19,8 @@ import {
   SiPostman,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import { CgFileDocument } from "react-icons/cg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -86,32 +93,42 @@ const Sidebar = () => {
           </button>
           {openSections.about && (
             <ul className=" space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <FaHtml5 className="text-[#e65100]" />
-                <span className="ml-2">index.html</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/"} className="flex items-center">
+                  <FaHtml5 className="text-[#e65100]" />
+                  <span className="ml-2">index.html</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <FaCss3 className="text-[#42a5f5]" />
-                <span className="ml-2">about.css</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/about"} className="flex items-center">
+                  <FaCss3 className="text-[#42a5f5]" />
+                  <span className="ml-2">about.css</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <SiJavascript className="text-[#f0db4f]" />
-                <span className="ml-2">skills.js</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/skills"} className="flex items-center">
+                  <SiJavascript className="text-[#f0db4f]" />
+                  <span className="ml-2">skills.js</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <SiTypescript className="text-[#007acc]" />
-                <span className="ml-2">experirience.ts</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/experience"} className="flex items-center">
+                  <SiTypescript className="text-[#007acc]" />
+                  <span className="ml-2">experience.ts</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Image
-                  src={
-                    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
-                  }
-                  alt="Python logo"
-                  width={15}
-                  height={15}
-                />
-                <span className="ml-2">projects.py</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/projects"} className="flex items-center">
+                  <Image
+                    src={
+                      "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                    }
+                    alt="Python logo"
+                    width={15}
+                    height={15}
+                  />
+                  <span className="ml-2">projects.py</span>
+                </Link>
               </li>
             </ul>
           )}
@@ -128,9 +145,11 @@ const Sidebar = () => {
           </button>
           {openSections.contact && (
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <MdEmail className="text-red-400" />
-                <span className="ml-2">Email.tsx</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/contact"} className="flex items-center">
+                  <MdEmail className="text-red-400" />
+                  <span className="ml-2">Email.txt</span>
+                </Link>
               </li>
             </ul>
           )}
@@ -147,17 +166,29 @@ const Sidebar = () => {
           </button>
           {openSections.misc && (
             <ul className="space-y-2 text-sm">
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <CgFileDocument className="text-gray-400" />
-                <span className="ml-2">Gaming.txt</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/gaming"} className="flex items-center">
+                  <FaNodeJs className="text-[#80bd00]" />
+                  <span className="ml-2">Gaming.js</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <SiReact className="text-blue-400" />
-                <span className="ml-2">Anime.jsx</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/anime"} className="flex items-center">
+                  <SiReact className="text-blue-400" />
+                  <span className="ml-2">Anime.jsx</span>
+                </Link>
               </li>
-              <li className="flex items-center hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <SiAngular className="text-red-500" />
-                <span className="ml-2">Learning.tsx</span>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={"/manga"} className="flex items-center">
+                  <FaVuejs className="text-[#41b883]" />
+                  <span className="ml-2">Manga.vue</span>
+                </Link>
+              </li>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
+                <Link href={'/learning'} className="flex items-center">
+                  <SiAngular className="text-red-500" />
+                  <span className="ml-2">Learning.tsx</span>
+                </Link>
               </li>
             </ul>
           )}
