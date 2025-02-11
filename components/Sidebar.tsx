@@ -41,7 +41,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Left SideNav */}
-      <div className="pt-10 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center">
+      <div className="pt-10 pb-8 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center">
         <div>
           <ul className="space-y-5">
             <li className="cursor-pointer" onClick={toggleSidebar}>

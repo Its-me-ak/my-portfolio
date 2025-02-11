@@ -4,6 +4,7 @@ import "./globals.css";
 import "@fontsource/fira-code";
 import Sidebar from "@/components/Sidebar";
 import TopHeader from "@/components/TopHeader";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,6 +24,7 @@ export default function RootLayout({
           <Sidebar />
             <main className="flex-grow p-6">{children}</main>
         </div>
+        <Footer/>
       </body>
     </html>
   );

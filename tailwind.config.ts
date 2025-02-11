@@ -12,6 +12,7 @@ export default {
         vscodeBg: "#193549",
         vscodeHeader: "#1f4662",
         vscodeSidebar: "#15232d",
+        vscodeFooter: '#15232d',
         vscodeBorder: "#3c3c3c",
         vscodeText: "#d4d4d4",
         vscodeAccent: "#007acc",
