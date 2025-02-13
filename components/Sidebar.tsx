@@ -21,18 +21,16 @@ import {
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
+import { useSidebar } from "@/context/SidebarContext";
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const {isSidebarOpen, toggleSidebar} = useSidebar()
   const [openSections, setOpenSections] = useState({
     about: true,
     contact: true,
     misc: true,
   });
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen((prev) => !prev);
-  };
 
   const toggleSection = (section: string) => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
@@ -41,7 +39,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Left SideNav */}
-      <div className="pt-10 pb-8 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center">
+      <div className="pt-10 pb-8 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center fixed ">
         <div>
           <ul className="space-y-5">
             <li className="cursor-pointer" onClick={toggleSidebar}>
@@ -78,7 +76,7 @@ const Sidebar = () => {
       <div
         className={`w-64 ${
           isSidebarOpen ? "" : "hidden"
-        } bg-vscodeSidebar text-gray-300 min-h-screen px-0 pb-4 pt-10`}
+        } bg-vscodeSidebar text-gray-300 min-h-screen px-0 pb-4 pt-10 fixed left-12 `}
       >
         <h2 className="text-sm px-2 font-semibold mb-4">EXPLORER</h2>
 
@@ -185,7 +183,7 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={'/learning'} className="flex items-center">
+                <Link href={"/learning"} className="flex items-center">
                   <SiAngular className="text-red-500" />
                   <span className="ml-2">Learning.tsx</span>
                 </Link>

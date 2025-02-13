@@ -5,6 +5,7 @@ import "@fontsource/fira-code";
 import Sidebar from "@/components/Sidebar";
 import TopHeader from "@/components/TopHeader";
 import Footer from "@/components/Footer";
+import { SidebarProvider } from "@/context/SidebarContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,12 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TopHeader />
-        <div className="flex h-screen bg-vscodeBg text-vscodeText">
-          <Sidebar />
+        <SidebarProvider>
+          <TopHeader />
+          <div className="flex h-screen bg-vscodeBg text-vscodeText overflow-auto">
+            <Sidebar />
             <main className="flex-grow p-6">{children}</main>
-        </div>
-        <Footer/>
+          </div>
+          <Footer />
+        </SidebarProvider>
       </body>
     </html>
   );

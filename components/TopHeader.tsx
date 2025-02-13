@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 const TopHeader = () => {
   return (
-    <div className='flex justify-between items-center ps-2 bg-vscodeHeader fixed w-full h-6'>
+    <div className='flex justify-between items-center ps-2 bg-vscodeHeader fixed z-10 w-full h-6'>
 
       <ul className='flex list-none gap-3 capitalize items-center text-sm'>
         <Link href={'/'}>
