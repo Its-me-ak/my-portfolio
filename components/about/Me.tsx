@@ -5,9 +5,9 @@ import { ShimmerButton } from "../magicui/shimmer-button";
 import { TextAnimate } from "../magicui/text-animate";
 import { TypingAnimation } from "../magicui/typing-animation";
 import Link from "next/link";
+import { BorderBeam } from "../magicui/border-beam";
 
 const Me = () => {
-
   const { isSidebarOpen } = useSidebar();
 
   return (
@@ -37,18 +37,19 @@ const Me = () => {
             technologies that push the boundaries of what's possible on the web.
           </TypingAnimation>
         </div>
-        <Link href={'/contact'}>
+        <Link href={"/contact"}>
           <ShimmerButton>Contact Me</ShimmerButton>
         </Link>
       </div>
-      <div>
+      <div className="relative rounded-xl">
         <Image
           src={"/assests/about.jpg"}
-          alt=""
+          alt="About Image"
           height={450}
           width={450}
           className="rounded-xl"
         />
+        <BorderBeam duration={8} size={200} />
       </div>
     </div>
   );
