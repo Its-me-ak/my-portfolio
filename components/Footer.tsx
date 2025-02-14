@@ -30,14 +30,14 @@ const Footer = () => {
 
   return (
     <div className="flex justify-between text-xs items-center px-2 bg-vscodeFooter border-t border-vscodeHeader fixed w-full h-6 bottom-0">
-      <ul className="flex gap-2 items-center">
+      <ul className="flex gap-2 items-center text-gray-300">
         <li>Build in:</li>
         <li>NextJs</li>
         <li>React</li>
         <li>TypeScript</li>
         <li>Tailwind</li>
       </ul>
-      <ul className="flex gap-4 items-center">
+      <ul className="flex gap-4 items-center text-gray-300">
         <li>UTF 8</li>
         <li>Port:3000</li>
         <li>Prettier</li>

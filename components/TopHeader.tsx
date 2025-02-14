@@ -5,7 +5,7 @@ const TopHeader = () => {
   return (
     <div className='flex justify-between items-center ps-2 bg-vscodeHeader fixed z-10 w-full h-6'>
 
-      <ul className='flex list-none gap-3 capitalize items-center text-sm'>
+      <ul className='flex list-none gap-3 capitalize items-center text-sm text-gray-200'>
         <Link href={'/'}>
           <Image src="https://img.icons8.com/color/96/000000/visual-studio-code-2019.png" alt="vs code logo" width={15} height={15} />
         </Link>
