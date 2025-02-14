@@ -29,7 +29,7 @@ const Footer = () => {
   });
 
   return (
-    <div className="flex justify-between text-xs items-center px-2 bg-vscodeFooter border-t border-vscodeHeader fixed w-full h-6 bottom-0">
+    <div className="flex justify-between text-xs items-center px-2 bg-vscodeFooter border-t border-vscodeHeader fixed z-50 w-full h-6 bottom-0">
       <ul className="flex gap-2 items-center text-gray-300">
         <li>Build in:</li>
         <li>NextJs</li>

@@ -41,7 +41,7 @@ const Me = () => {
           <ShimmerButton>Contact Me</ShimmerButton>
         </Link>
       </div>
-      <div className="relative rounded-xl">
+      <div className="relative rounded-xl h-[450] w-[450]">
         <Image
           src={"/assests/about.jpg"}
           alt="About Image"
