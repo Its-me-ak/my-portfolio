@@ -33,7 +33,15 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --skills_gradient_bg: linear-gradient(261deg, #15232d 5.73%, rgba(18, 39, 56, .98) 93.52%);
+    --skills_stroke: #007acc;
+    --skills_text_color: #56b6d4;
+    --skills_gradient: linear-gradient(277deg, #2454fe 1.72%, #34cf8e 98.88%);
+    --Title-Gradient: linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%);
+    --primary_light_icon: #252f45;
+    --white: #fff;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -66,7 +74,34 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Skills */
+
+.skill_skill__oFitQ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: start;
+  padding: 7px 18px;
+  border: 2px solid var(--primary_light_icon);
+  background: var(--skills_gradient_bg);
+  color: var(--skills_text_color, #56b6d4);
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  outline: 2px solid var(--skills_stroke);
+  outline-offset: 0;
+  letter-spacing: 1.2px
+}
+
+.skill_skill__oFitQ:hover {
+  background: var(--Title-Gradient);
+  color: var(--white)
 }
