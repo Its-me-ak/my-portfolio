@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Skill {
     name: string;
     icon?: string;
+    link?: string;
 }
 
 interface SkillCategoryProps {
@@ -18,17 +20,19 @@ const SkillSection:React.FC<SkillCategoryProps> = ({ title, skills }) => {
       </h3>
       <div className="flex gap-5 flex-wrap">
         {skills.map((skill, index) => (
-          <button key={index} className="skill_skill__oFitQ">
-            {skill.icon && (
-              <Image
-                src={skill.icon}
-                alt={`${skill.name} logo`}
-                height={20}
-                width={20}
-              />
-            )}
-            {skill.name}
-          </button>
+          <Link href={skill.link ?? "#"} target="_blank" key={index}>
+            <button className="skill_skill__oFitQ">
+              {skill.icon && (
+                <Image
+                  src={skill.icon}
+                  alt={`${skill.name} logo`}
+                  height={18}
+                  width={18}
+                />
+              )}
+              {skill.name}
+            </button>
+          </Link>
         ))}
       </div>
     </>

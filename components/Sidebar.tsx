@@ -15,7 +15,6 @@ import {
   SiJavascript,
   SiTypescript,
   SiReact,
-  SiAngular,
   SiPostman,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -110,12 +109,6 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/experience"} className="flex items-center">
-                  <SiTypescript className="text-[#007acc]" />
-                  <span className="ml-2">experience.ts</span>
-                </Link>
-              </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <Link href={"/projects"} className="flex items-center">
                   <Image
                     src={
@@ -184,7 +177,7 @@ const Sidebar = () => {
               </li>
               <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
                 <Link href={"/learning"} className="flex items-center">
-                  <SiAngular className="text-red-500" />
+                  <SiTypescript className="text-[#007acc]" />
                   <span className="ml-2">Learning.tsx</span>
                 </Link>
               </li>
