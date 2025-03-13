@@ -147,6 +147,11 @@ const SkillsPage = () => {
       icon: "/assests/netlify.svg",
       link: "https://www.netlify.com/",
     },
+        {
+      name: "Render",
+      icon: "/assests/render.svg",
+      link: "https://render.com/",
+    },
     {
       name: "Appwrite",
       icon: "/assests/appwrite.png",
