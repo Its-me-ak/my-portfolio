@@ -43,32 +43,60 @@ const CardBox = () => {
       title: "hunter x hunter",
       videoUrl: "assests/video/hxh.mp4"
     },
-    //      {
-    //   title: "death note",
-    //   videoUrl: "assests/video/death-note.mp4"
-    // },
+    {
+      title: "death note",
+      videoUrl: "assests/video/death-note.mp4"
+    },
+        {
+      title: "vinland saga",
+      videoUrl: "assests/video/vinland.mp4"
+    },
     // {
     //   title: "Monster",
     //   videoUrl: "assests/video/monster.mp4"
     // },
-         {
+    {
       title: "kaiju no. 8",
       videoUrl: "assests/video/Kaiju_No_8.mp4"
     },
 
-             {
+    {
       title: "solo leveling",
       videoUrl: "assests/video/solo-leveling.mp4"
     },
-             {
+    {
       title: "chainsaw man",
       videoUrl: "assests/video/chainsawmen.mp4"
     },
-             {
+    {
       title: "boruto",
       videoUrl: "assests/video/boruto.mp4"
     },
-             {
+        {
+      title: "blue lock",
+      videoUrl: "assests/video/bl.mp4"
+    },
+        {
+      title: "tokyo ghoul",
+      videoUrl: "assests/video/tg.mp4"
+    },
+        {
+      title: "that time i got reincarnated as a slime",
+      videoUrl: "assests/video/slime.mp4"
+    },
+        {
+      title: "dandadan",
+      videoUrl: "assests/video/dandadan.mp4"
+    },
+        {
+      title: "dororo",
+      videoUrl: "assests/video/dororo.mp4"
+    },
+            {
+      title: "mushoku tensei",
+      videoUrl: "assests/video/mt.mp4"
+    },
+    {
       title: "haikyu",
       videoUrl: "assests/video/haiyku.mp4"
     },
