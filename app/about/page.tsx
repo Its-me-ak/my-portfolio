@@ -1,5 +1,5 @@
 "use client";
-import Education from "@/components/about/Education";
+import Education from "@/components/about/Educations";
 import Experience from "@/components/about/Experience";
 import Me from "@/components/about/Me";
 import { useSidebar } from "@/context/SidebarContext";
