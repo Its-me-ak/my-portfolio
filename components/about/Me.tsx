@@ -24,17 +24,17 @@ const Me = () => {
         </h3>
         <h1 className="text-4xl font-bold">
           <TextAnimate animate="slideLeft" by="word">
-            I'm Mohd Aquib
+            I&apos;m Mohd Aquib
           </TextAnimate>
         </h1>
         <div className="pb-4">
           <TypingAnimation className="text-md" duration={30}>
             A passionate frontend developer with a flair for crafting immersive
             and visually appealing web experiences. Fluent in the languages of
-            the web, I'm well-versed in HTML, CSS, SASS, Bootstrap, JavaScript,
+            the web, I&apos;m well-versed in HTML, CSS, SASS, Bootstrap, JavaScript,
             and WordPress. I have a strong command of modern frontend frameworks
-            such as React, and I'm always eager to explore new tools and
-            technologies that push the boundaries of what's possible on the web.
+            such as React, and I&apos;m always eager to explore new tools and
+            technologies that push the boundaries of what&apos;s possible on the web.
           </TypingAnimation>
         </div>
         <Link href={"/contact"}>
