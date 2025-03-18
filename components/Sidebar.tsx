@@ -24,14 +24,18 @@ import { useSidebar } from "@/context/SidebarContext";
 
 const Sidebar = () => {
   const { isSidebarOpen, toggleSidebar } = useSidebar()
-  const [openSections, setOpenSections] = useState({
+  const [openSections, setOpenSections] = useState<{
+    about: boolean;
+    contact: boolean;
+    misc: boolean;
+  }>({
     about: true,
     contact: true,
     misc: true,
   });
 
 
-  const toggleSection = (section: string) => {
+  const toggleSection = (section: keyof typeof openSections) => {
     setOpenSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
 
