@@ -11,7 +11,7 @@ const Me = () => {
   const { isSidebarOpen } = useSidebar();
 
   return (
-    <div className="flex gap-2 justify-between">
+    <div className="flex md:flex-row flex-col gap-2 justify-between">
       <div
         className={`${
           isSidebarOpen ? "max-w-xl" : "max-w-4xl"
@@ -41,7 +41,7 @@ const Me = () => {
           <ShimmerButton>Contact Me</ShimmerButton>
         </Link>
       </div>
-      <div className="relative rounded-xl h-[450] w-[450]">
+      <div className="relative rounded-xl md:h-[450] md:w-[450] md:mt-0 mt-6 ">
         <Image
           src={"/assests/about.jpg"}
           alt="About Image"

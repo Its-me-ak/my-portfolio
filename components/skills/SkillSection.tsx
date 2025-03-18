@@ -18,7 +18,7 @@ const SkillSection:React.FC<SkillCategoryProps> = ({ title, skills }) => {
       <h3 className="mt-8 mb-4 text-lg font-semibold text-slate-300">
         {title}
       </h3>
-      <div className="flex gap-5 flex-wrap">
+      <div className="flex md:gap-5 gap-4 flex-wrap">
         {skills.map((skill, index) => (
           <Link href={skill.link ?? "#"} target="_blank" key={index}>
             <button className="skill_skill__oFitQ">
@@ -26,8 +26,8 @@ const SkillSection:React.FC<SkillCategoryProps> = ({ title, skills }) => {
                 <Image
                   src={skill.icon}
                   alt={`${skill.name} logo`}
-                  height={18}
-                  width={18}
+                  height={16}
+                  width={16}
                 />
               )}
               {skill.name}

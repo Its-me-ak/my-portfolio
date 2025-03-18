@@ -8,9 +8,9 @@ import React from "react";
 const AboutPage = () => {
   const { isSidebarOpen } = useSidebar();
   return (
-    <main className={`${isSidebarOpen ? "ml-80" : "ml-12"}  mt-20 pb-20`}>
+    <main className={`${isSidebarOpen ? "md:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
       <Me />
-      <div className="flex justify-between pt-16 gap-10">
+      <div className="flex md:flex-row flex-col justify-between pt-16 gap-10">
         <Experience />
         <Education />
       </div>

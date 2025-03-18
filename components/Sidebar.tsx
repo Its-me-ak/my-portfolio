@@ -23,7 +23,7 @@ import Link from "next/link";
 import { useSidebar } from "@/context/SidebarContext";
 
 const Sidebar = () => {
-  const {isSidebarOpen, toggleSidebar} = useSidebar()
+  const { isSidebarOpen, toggleSidebar } = useSidebar()
   const [openSections, setOpenSections] = useState({
     about: true,
     contact: true,
@@ -38,7 +38,7 @@ const Sidebar = () => {
   return (
     <>
       {/* Left SideNav */}
-      <div className="pt-10 pb-8 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center fixed ">
+      <div className="pt-10 pb-8 bg-[#122738] min-h-screen flex flex-col justify-between p-3 items-center fixed z-50">
         <div>
           <ul className="space-y-5">
             <li className="cursor-pointer" onClick={toggleSidebar}>
@@ -73,9 +73,8 @@ const Sidebar = () => {
         </div>
       </div>
       <div
-        className={`w-64 ${
-          isSidebarOpen ? "" : "hidden"
-        } bg-vscodeSidebar text-gray-300 min-h-screen px-0 pb-4 pt-10 fixed left-12 `}
+        className={`fixed z-40 top-0 left-0 h-full w-64 bg-gray-800 text-white transition-transform ${isSidebarOpen ? "translate-x-12" : "-translate-x-full"
+          }`}
       >
         <h2 className="text-sm px-2 font-semibold mb-4">EXPLORER</h2>
 

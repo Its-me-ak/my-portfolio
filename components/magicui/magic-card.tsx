@@ -76,7 +76,7 @@ export function MagicCard({
   return (
     <div
       ref={cardRef}
-      className={cn("group relative flex h-48 rounded-xl", className)}
+      className={cn("group relative flex md:h-48 rounded-xl", className)}
     >
       <div className="absolute inset-px z-10 rounded-xl bg-vscodeHeader" />
       <div className="relative z-30">{children}</div>

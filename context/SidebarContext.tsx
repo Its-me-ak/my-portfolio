@@ -1,6 +1,6 @@
 "use client"; // Context needs to be a client component
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const SidebarContext = createContext({
     isSidebarOpen: true,
@@ -9,6 +9,19 @@ const SidebarContext = createContext({
 
 export function SidebarProvider({ children }: { children: React.ReactNode }) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+     // Hide sidebar by default on mobile
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setIsSidebarOpen(false);
+            }
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
 
