@@ -51,13 +51,18 @@ const CardBox = () => {
       title: "vinland saga",
       videoUrl: "assests/video/vinland.mp4"
     },
-    // {
-    //   title: "Monster",
-    //   videoUrl: "assests/video/monster.mp4"
-    // },
+    {
+      title: "Monster",
+      videoUrl: "assests/video/Johan_Liebert.mp4"
+    },
     {
       title: "kaiju no. 8",
       videoUrl: "assests/video/Kaiju_No_8.mp4"
+    },
+
+        {
+      title: "spy family",
+      videoUrl: "assests/video/spy-family.mp4"
     },
 
     {
