@@ -37,7 +37,7 @@ const Footer = () => {
         <li>TypeScript</li>
         <li>Tailwind</li>
       </ul>
-      <ul className="md:flex hidden gap-4 items-center text-gray-300">
+      <ul className="lg:flex hidden gap-4 items-center text-gray-300">
         <li>UTF 8</li>
         <li>Port:3000</li>
         <li>Prettier</li>

@@ -23,7 +23,7 @@ import Link from "next/link";
 import { useSidebar } from "@/context/SidebarContext";
 
 const Sidebar = () => {
-  const { isSidebarOpen, toggleSidebar } = useSidebar()
+  const { isSidebarOpen, toggleSidebar, sidebarRef } = useSidebar()
   const [openSections, setOpenSections] = useState<{
     about: boolean;
     contact: boolean;
@@ -76,7 +76,7 @@ const Sidebar = () => {
           </ul>
         </div>
       </div>
-      <div
+      <div ref={sidebarRef}
         className={`fixed z-40 top-0 left-0 h-full w-64 bg-gray-800 text-white transition-transform ${isSidebarOpen ? "translate-x-12" : "-translate-x-full"
           }`}
       >

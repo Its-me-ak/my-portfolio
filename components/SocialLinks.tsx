@@ -9,7 +9,7 @@ import {
 import { SiPeerlist } from "react-icons/si";
 const SocialLinks = () => {
   return (
-    <div className="flex-1 md:mt-0 mt-10">
+    <div className="flex-1 lg:mt-0 mt-10">
       <h2 className="text-lg font-bold mb-2">Find Me</h2>
       <div className="space-y-4">
         <Link

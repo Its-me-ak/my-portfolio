@@ -107,7 +107,7 @@ const CardBox = () => {
     },
   ]
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {animeData.map((anime, index) => (
         <div key={index} className="w-full relative rounded-lg overflow-hidden">
           <ReactPlayer

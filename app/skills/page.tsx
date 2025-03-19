@@ -171,7 +171,7 @@ const SkillsPage = () => {
   ];
 
   return (
-    <main className={`${isSidebarOpen ? "md:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
+    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
       <h1 className="text-4xl font-bold">My Advantages</h1>
       <p className="text-sm text-gray-300 leading-6 mt-3">
         I bring a unique blend of creativity and technical expertise, ensuring
