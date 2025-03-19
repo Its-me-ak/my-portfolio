@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState, useRef, RefObject } fro
 interface SidebarContextProps {
     isSidebarOpen: boolean;
     toggleSidebar: () => void;
-    sidebarRef: RefObject<HTMLDivElement>;
+    sidebarRef: RefObject<HTMLDivElement | null>;
 }
 
 const SidebarContext = createContext<SidebarContextProps | undefined>(undefined);
