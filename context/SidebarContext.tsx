@@ -1,33 +1,16 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, useRef, RefObject } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 interface SidebarContextProps {
     isSidebarOpen: boolean;
     toggleSidebar: () => void;
-    sidebarRef: RefObject<HTMLDivElement | null>;
 }
 
 const SidebarContext = createContext<SidebarContextProps | undefined>(undefined);
 
 export function SidebarProvider({ children }: { children: React.ReactNode }) {
-    const sidebarRef = useRef<HTMLDivElement>(null);
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-
-    useEffect(() => {
-        const handleSidebar = (e: MouseEvent) => {
-            if (!sidebarRef.current) return;
-
-            if (!sidebarRef.current.contains(e.target as Node)) {
-                setIsSidebarOpen(false);
-            }
-        };
-        document.addEventListener("click", handleSidebar, true);
-
-        return () => {
-            document.removeEventListener("click", handleSidebar);
-        };
-    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -39,10 +22,13 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
+const toggleSidebar = () => {
+    console.log("Toggling sidebar"); // Debugging
+    setIsSidebarOpen((prev) => !prev);
+};
 
     return (
-        <SidebarContext.Provider value={{ isSidebarOpen, toggleSidebar, sidebarRef }}>
+        <SidebarContext.Provider value={{ isSidebarOpen, toggleSidebar }}>
             {children}
         </SidebarContext.Provider>
     );
