@@ -19,6 +19,8 @@ const MediaCard: React.FC<MangaCardProps> = ({media}) => {
             width={300}
             height={300}
             className='sm:h-80 h-full w-full'
+              quality={70} 
+  loading="lazy"
             />
           <div className="absolute top-0 left-0 h-full w-full bg-black/30 rounded-lg"></div>
           <div className="w-full absolute bottom-2 left-2 p-1 z-10">

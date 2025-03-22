@@ -31,6 +31,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             width={220}
             height={140}
             className="rounded-t-lg object-cover"
+              quality={70} 
+  loading="lazy"
           />
         </div>
 
