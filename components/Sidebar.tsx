@@ -68,7 +68,9 @@ const Sidebar = () => {
         <div>
           <ul className="space-y-4">
             <li>
+              <Link href="/">
               <FaRegCircleUser className="text-2xl" />
+              </Link>
             </li>
             <li>
               <IoSettingsOutline className="text-2xl" />
