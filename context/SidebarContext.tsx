@@ -14,7 +14,7 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSidebarOpen(window.innerWidth >= 848);
+            setIsSidebarOpen(window.innerWidth >= 1024);
         };
 
         handleResize();
@@ -23,7 +23,6 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
 const toggleSidebar = () => {
-    console.log("Toggling sidebar"); // Debugging
     setIsSidebarOpen((prev) => !prev);
 };
 
