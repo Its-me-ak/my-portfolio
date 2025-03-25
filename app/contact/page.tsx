@@ -19,7 +19,7 @@ const Contact = () => {
                 Have a project in mind or just want to say hello? Feel free to reach out!
             </p>
 
-            <div className="flex justify-between items-center lg:flex-row flex-col">
+            <div className="flex justify-between items-center lg:flex-row flex-col gap-10">
                 <div className="max-w-xl w-full">
                     <form className="space-y-4">
                         <input
@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
 
                 {/* ✅ Fixed Map Section */}
-                <div className="w-full md:w-[50%] h-[300px] md:h-[400px] rounded-lg overflow-hidden lg:mt-0 mt-10">
+                <div className="w-full md:w-[50%] h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                     <MapContainer
                         center={center}
                         zoom={12}

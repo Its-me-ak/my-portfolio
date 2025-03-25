@@ -13,9 +13,8 @@ const Me = () => {
   return (
     <div className="flex lg:flex-row flex-col gap-2 justify-between">
       <div
-        className={`${
-          isSidebarOpen ? "max-w-xl" : "max-w-4xl"
-        }  text-justify space-y-3`}
+        className={`${isSidebarOpen ? "max-w-xl" : "max-w-4xl"
+          }  text-justify space-y-3`}
       >
         <h3 className="text-md font-semibold text-vscodeAccent">
           <TextAnimate animate="slideUp" by="word">
@@ -37,16 +36,21 @@ const Me = () => {
             technologies that push the boundaries of what&apos;s possible on the web.
           </TypingAnimation>
         </div>
-        <Link href={"/contact"}>
-          <ShimmerButton>Contact Me</ShimmerButton>
-        </Link>
+        <div className="flex gap-5">
+          <Link href={"/contact"}>
+            <ShimmerButton>Contact Me</ShimmerButton>
+          </Link>
+          <Link href="assests/Mohd_Aquib_Frontend_Developer_CV.pdf" target="_blank" rel="noopener noreferrer" download>
+            <ShimmerButton>Download CV</ShimmerButton>
+          </Link>
+        </div>
       </div>
-      <div className="relative rounded-xl lg:h-[450] lg:w-[450] lg:mt-0 mt-6 ">
+      <div className="relative rounded-xl lg:h-[450px] lg:w-[450px] lg:mt-0 mt-6 ">
         <Image
           src={"/assests/about.jpg"}
           alt="About Image"
           height={450}
-          width={700}
+          width={500}
           className="rounded-xl"
         />
         <BorderBeam duration={8} size={200} />
