@@ -19,7 +19,7 @@ const Experience = () => {
       period: "Aug, 2023 - Mar, 2024",
       title: "Web Designer & Frontend Developer",
       description:
-        "Played a pivotal role in crafting immersive and user-centric web experiences for company websites.",
+        "Developed and maintained front-end functionalities, enhancing user engagement and accessibility. Collaborated with UX/UI teams and backend developers for seamless integration. Optimized performance for faster load speeds, improved responsiveness, and cross-browser compatibility.",
     },
     {
       company: "AdmeC Multimedia",
@@ -48,7 +48,7 @@ const Experience = () => {
         {experiences.map((exp, index) => (
           <MagicCard
             key={index}
-            className="p-6 text-left"
+            className="p-5 text-left"
             gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
           >
             <h3 className="text-xl font-semibold">{exp.title}</h3>

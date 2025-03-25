@@ -48,7 +48,7 @@ const Education = () => {
         {educationData.map((edu, index) => (
           <MagicCard
             key={index}
-            className="p-6 text-left"
+            className="p-5 text-left"
             gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
           >
             <h3 className="text-xl font-semibold">{edu.title}</h3>
