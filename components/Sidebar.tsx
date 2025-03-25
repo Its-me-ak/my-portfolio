@@ -79,10 +79,10 @@ const Sidebar = () => {
         </div>
       </div>
       <div
-        className={`fixed z-40 top-0 left-0 h-full w-64 bg-gray-800 text-white transition-transform ${isSidebarOpen ? "translate-x-12" : "-translate-x-full"
+        className={`fixed z-40 top-7 left-0 h-full w-64 bg-gray-800 text-white transition-transform ${isSidebarOpen ? "translate-x-12" : "-translate-x-full"
           }`}
       >
-        <h2 className="text-sm px-2 font-semibold mb-4">EXPLORER</h2>
+        <h2 className="text-sm px-2 font-semibold mb-2 mt-2">EXPLORER</h2>
 
         {/* About Section */}
         <div>
@@ -95,26 +95,26 @@ const Sidebar = () => {
           </button>
           {openSections.about && (
             <ul className=" space-y-2 text-sm">
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/"} className="flex items-center">
+                <Link href={"/"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center">
                   <FaHtml5 className="text-[#e65100]" />
                   <span className="ml-2">index.html</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/about"} className="flex items-center">
+                </Link>
+                <Link href={"/about"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <FaCss3 className="text-[#42a5f5]" />
                   <span className="ml-2">about.css</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/skills"} className="flex items-center">
+                </Link>
+                <Link href={"/skills"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <SiJavascript className="text-[#f0db4f]" />
                   <span className="ml-2">skills.js</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/projects"} className="flex items-center">
+                </Link>
+                <Link href={"/projects"} className="">
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <Image
                     src={
                       "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
@@ -124,8 +124,8 @@ const Sidebar = () => {
                     height={15}
                   />
                   <span className="ml-2">projects.py</span>
-                </Link>
               </li>
+                </Link>
             </ul>
           )}
         </div>
@@ -141,12 +141,12 @@ const Sidebar = () => {
           </button>
           {openSections.contact && (
             <ul className="space-y-2 text-sm">
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/contact"} className="flex items-center">
+                <Link href={"/contact"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center">
                   <MdEmail className="text-red-400" />
                   <span className="ml-2">Email.txt</span>
-                </Link>
               </li>
+                </Link>
             </ul>
           )}
         </div>
@@ -162,30 +162,30 @@ const Sidebar = () => {
           </button>
           {openSections.misc && (
             <ul className="space-y-2 text-sm">
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/gaming"} className="flex items-center">
+                <Link href={"/gaming"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center">
                   <FaNodeJs className="text-[#80bd00]" />
                   <span className="ml-2">Gaming.js</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/anime"} className="flex items-center">
+                </Link>
+                <Link href={"/anime"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <SiReact className="text-blue-400" />
                   <span className="ml-2">Anime.jsx</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/manga"} className="flex items-center">
+                </Link>
+                <Link href={"/manga"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <FaVuejs className="text-[#41b883]" />
                   <span className="ml-2">Manga.vue</span>
-                </Link>
               </li>
-              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1">
-                <Link href={"/learning"} className="flex items-center">
+                </Link>
+                <Link href={"/learning"}>
+              <li className=" hover:bg-[#0d3a58] cursor-pointer px-5 py-1 flex items-center my-2">
                   <SiTypescript className="text-[#007acc]" />
                   <span className="ml-2">Learning.tsx</span>
-                </Link>
               </li>
+                </Link>
             </ul>
           )}
         </div>
