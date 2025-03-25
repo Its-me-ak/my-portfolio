@@ -54,7 +54,7 @@ const Contact = () => {
 
     return (
         <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"} mt-20 pb-20`}>
-            <h2 className="text-4xl font-bold mb-6 text-white">Get in Touch</h2>
+            <h2 className="md:text-4xl text-3xl font-bold mb-4 text-white">Get in Touch</h2>
             <p className="text-gray-300 mb-8">
                 Have a project in mind or just want to say hello? Feel free to reach out!
             </p>

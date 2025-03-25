@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <BorderBeam duration={8} size={200} />
       <div className="bg-[#122738] rounded-lg shadow-md shadow-[#000]/[0.3] overflow-hidden h-full">
         {/* Image Section */}
-        <div className="w-full h-44 overflow-hidden">
+        <div className="w-full sm:h-44 h-auto overflow-hidden">
           <Image
             src={project.image}
             alt={project.title}

@@ -49,7 +49,7 @@ const GamingPage = () => {
     return (
         <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
             <div className="mb-10">
-                <h1 className="text-3xl font-bold text-white mb-2 leading-normal">Legends Are Made in the Game</h1>
+                <h1 className="md:text-4xl text-3xl font-bold text-white mb-2 leading-normal">Legends Are Made in the Game</h1>
                 <p className="text-sm">Every game is a battlefield where skills, strategy, and passion collide. Whether you’re looking for intense action, high-speed races, or open-world exploration, it’s time to level up and immerse yourself in a world of endless possibilities.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

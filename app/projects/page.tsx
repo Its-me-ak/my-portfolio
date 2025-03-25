@@ -141,7 +141,7 @@ const ProjectPage = () => {
 
   return (
    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
-      <h1 className="text-4xl font-bold">Featured Projects</h1>
+      <h1 className="md:text-4xl text-3xl font-bold">Featured Projects</h1>
       <p className="text-sm text-gray-300 leading-6 mt-3">
         College and Side Projects for practice.
       </p>

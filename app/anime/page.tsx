@@ -5,7 +5,7 @@ import { useSidebar } from "@/context/SidebarContext";
 const AnimePage = () => {
   const { isSidebarOpen } = useSidebar();
 
-    const animeData = [
+  const animeData = [
     {
       title: "Bleach",
       videoUrl: "assests/video/bleach-anime.mp4"
@@ -50,7 +50,7 @@ const AnimePage = () => {
       title: "death note",
       videoUrl: "assests/video/death-note.mp4"
     },
-        {
+    {
       title: "vinland saga",
       videoUrl: "assests/video/vinland.mp4"
     },
@@ -62,8 +62,11 @@ const AnimePage = () => {
       title: "kaiju no. 8",
       videoUrl: "assests/video/Kaiju_No_8.mp4"
     },
-
-        {
+    {
+      title: "fire force",
+      videoUrl: "assests/video/Fire_Force.mp4"
+    },
+    {
       title: "spy family",
       videoUrl: "assests/video/spy-family.mp4"
     },
@@ -80,27 +83,27 @@ const AnimePage = () => {
       title: "boruto",
       videoUrl: "assests/video/boruto.mp4"
     },
-        {
+    {
       title: "blue lock",
       videoUrl: "assests/video/bl.mp4"
     },
-        {
+    {
       title: "tokyo ghoul",
       videoUrl: "assests/video/tg.mp4"
     },
-        {
+    {
       title: "that time i got reincarnated as a slime",
       videoUrl: "assests/video/slime.mp4"
     },
-        {
+    {
       title: "dandadan",
       videoUrl: "assests/video/dandadan.mp4"
     },
-        {
+    {
       title: "dororo",
       videoUrl: "assests/video/dororo.mp4"
     },
-            {
+    {
       title: "mushoku tensei",
       videoUrl: "assests/video/mt.mp4"
     },
@@ -110,16 +113,16 @@ const AnimePage = () => {
     },
   ]
   return (
-      <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
-       <div className="mb-10">
-            <h1 className="text-3xl font-bold text-white mb-2">Living Between Reality and Anime</h1>
-            <p className="text-sm">Whether its action, mystery, or heartwarming moments, anime has a way of capturing emotions like nothing else. Sometimes I watch, sometimes I rewatch—but I’m always part of this universe.</p>
-          </div>
+    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
+      <div className="mb-10">
+        <h1 className="md:text-4xl text-3xl font-boldfont-bold text-white mb-2 leading-normal">Living Between Reality and Anime</h1>
+        <p className="text-sm">Whether its action, mystery, or heartwarming moments, anime has a way of capturing emotions like nothing else. Sometimes I watch, sometimes I rewatch—but I’m always part of this universe.</p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {animeData.map((anime) => (
+        {animeData.map((anime) => (
           <CardBox key={anime.title} anime={anime} />
-                ))}
-    </div>
+        ))}
+      </div>
     </main>
   )
 }
