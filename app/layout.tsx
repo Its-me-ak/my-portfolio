@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import "@fontsource/fira-code";
 import Sidebar from "@/components/Sidebar";
@@ -28,6 +29,7 @@ export default function RootLayout({
             <Sidebar />
             <main className="flex-grow p-6">{children}</main>
             <Analytics />
+            <SpeedInsights/>
           </div>
           <Footer />
         </SidebarProvider>
