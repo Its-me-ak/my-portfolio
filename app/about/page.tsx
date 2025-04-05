@@ -17,7 +17,7 @@ const AboutPage = () => {
         <Education />
       </div>
 
-      <div className="lg:w-full w-80 sm:w-[560px] md:w-[700px] pt-16">
+      <div className="lg:w-full w-[350px] sm:w-[560px] md:w-[700px] pt-16">
         <h2 className="text-xl font-semibold mb-4 text-white">GitHub Contributions</h2>
 
         <div className="overflow-x-auto rounded-lg p-4 bg-[#122738]">
