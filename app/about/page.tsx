@@ -26,6 +26,7 @@ const AboutPage = () => {
             blockSize={17}
             blockMargin={5}
             fontSize={14}
+            colorScheme="dark"
           />
         </div>
       </div>
