@@ -1,9 +1,9 @@
 import Heading from "@/components/Heading";
 import SocialLinks from "@/components/SocialLinks";
 import HomeContainer from "@/components/HomeContainer"
-import {
-  FaHtml5,
-} from "react-icons/fa";
+// import {
+//   FaHtml5,
+// } from "react-icons/fa";
 
 export default function Home() {
   return (
