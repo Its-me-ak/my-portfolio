@@ -17,7 +17,7 @@ const Me = () => {
           className={`${isSidebarOpen ? "max-w-xl" : "max-w-4xl"
             }  text-justify space-y-3`}
         >
-          <h3 className="text-md font-semibold text-vscodeAccent">
+          <h3 className="text-md font-semibold text-[var(--accent-color)]">
             <TextAnimate animate="slideUp" by="word">
               Hello, Welcome
             </TextAnimate>

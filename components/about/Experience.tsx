@@ -53,7 +53,7 @@ const Experience = () => {
           >
             <h3 className="text-xl font-semibold">{exp.title}</h3>
             <p className="text-sm text-gray-300">{exp.company}</p>
-            <p className="text-xs text-vscodeAccent italic">{exp.period}</p>
+            <p className="text-xs text-[var(--accent-color)] italic">{exp.period}</p>
             <p className="text-sm mt-2 text-justify leading-5">{exp.description}</p>
           </MagicCard>
         ))}

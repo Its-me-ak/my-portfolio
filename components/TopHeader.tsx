@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 const TopHeader = () => {
   return (
-    <div className="flex justify-between items-center ps-2 bg-[#122738] fixed z-[99] w-full h-7">
+    <div className="flex justify-between items-center ps-2 bg-[var(--titlebar-bg)] border-b border-bottombar fixed z-[99] w-full h-7">
       <ul className="flex list-none gap-3 capitalize items-center text-sm text-gray-200">
         <Link href={"/"}>
           <Image
@@ -18,6 +18,9 @@ const TopHeader = () => {
         <Link href={"/projects"}>Projects</Link>
         <Link href={"/contact"}>contact</Link>
       </ul>
+      <h3 className='capitalize text-[var(--text-color)] text-sm'>
+        mohd aquib - visual studio code
+      </h3>
         <ul className='md:flex hidden'>
           <li>
             <svg

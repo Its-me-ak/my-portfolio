@@ -53,7 +53,7 @@ const Education = () => {
           >
             <h3 className="text-xl font-semibold">{edu.title}</h3>
             <p className="text-sm text-gray-300">{edu.institution}</p>
-            <p className="text-xs text-vscodeAccent italic">{edu.duration}</p>
+            <p className="text-xs text-[var(--accent-color)] italic">{edu.duration}</p>
             <p className="text-sm mt-2 text-justify leading-5">{edu.description}</p>
           </MagicCard>
         ))}

@@ -21,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="relative p-[2px] rounded-lg">
       <BorderBeam duration={8} size={200} />
-      <div className="bg-[#122738] rounded-lg shadow-md shadow-[#000]/[0.3] overflow-hidden h-full">
+      <div className="bg-[var(--article-bg)] rounded-lg shadow-md shadow-[#000]/[0.3] overflow-hidden h-full">
         {/* Image Section */}
         <div className="w-full sm:h-44 h-auto overflow-hidden">
           <Image
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {/* Technology Tags */}
           <div className="flex flex-wrap gap-2 my-2">
             {project.technologies.map((tech) => (
-              <Button key={tech} className="bg-vscodeHeader hover:bg-vscodeHeader">
+              <Button key={tech} className="bg-[var(--scrollbar-thumb-bg)]">
                 {tech}
               </Button>
             ))}
@@ -52,10 +52,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
           {/* Links */}
           <div className="mt-3 flex justify-between items-center">
-            <Link href={project.liveLink} target="_blank" className="text-xs text-vscodeAccent capitalize font-semibold">
+            <Link href={project.liveLink} target="_blank" className="text-xs text-[var(--accent-color)] capitalize font-semibold">
               View Project
             </Link>
-            <Link href={project.githubLink} target="_blank" className="text-xs text-vscodeAccent capitalize font-semibold">
+            <Link href={project.githubLink} target="_blank" className="text-xs text-[var(--accent-color)] capitalize font-semibold">
               GitHub
             </Link>
           </div>

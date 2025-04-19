@@ -65,7 +65,7 @@ const Contact = () => {
                         <input
                             type="text"
                             placeholder="Your Name"
-                            className="w-full p-3 text-sm bg-gray-800 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400"
+                            className="w-full p-3 text-sm bg-[var(--article-bg)] rounded-md focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)]"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
@@ -73,7 +73,7 @@ const Contact = () => {
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="w-full p-3 text-sm bg-gray-800 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400"
+                                   className="w-full p-3 text-sm bg-[var(--article-bg)] rounded-md focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)]"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -81,21 +81,21 @@ const Contact = () => {
                         <input
                             type="text"
                             placeholder="Your Number"
-                            className="w-full p-3 text-sm bg-gray-800 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400"
+                                  className="w-full p-3 text-sm bg-[var(--article-bg)] rounded-md focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)]"
                             value={number}
                             onChange={(e) => setNumber(e.target.value)}
                             required
                         />
                         <textarea
                             placeholder="Your Message"
-                            className="w-full p-3 text-sm h-32 bg-gray-800 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400"
+                                  className="w-full p-3 h-32 text-sm bg-[var(--article-bg)] rounded-md focus:outline-none focus:ring-1 focus:ring-[var(--accent-color)]"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             required
                         ></textarea>
                         <button
                             type="submit"
-                            className="w-full py-3 bg-vscodeAccent hover:bg-blue-600 rounded-md text-white font-semibold transition"
+                            className="w-full py-3 bg-[var(--accent-color)] rounded-md text-white font-semibold transition"
                             disabled={loading}
                         >
                             {loading ? "Sending..." : "Send Message"}

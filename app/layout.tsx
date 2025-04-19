@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import "@fontsource/fira-code";
-import Sidebar from "@/components/Sidebar";
-import TopHeader from "@/components/TopHeader";
-import Footer from "@/components/Footer";
-import { SidebarProvider } from "@/context/SidebarContext";
-import { Toaster } from "react-hot-toast"
+import Providers from "./provider";
+
 
 export const metadata: Metadata = {
   title: "Mohd Aquib | Frontend Developer & Web Designer",
@@ -19,20 +14,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body>
-        <SidebarProvider>
-          <Toaster />
-          <TopHeader />
-          <div className="flex h-screen bg-vscodeBg text-vscodeText overflow-auto">
-            <Sidebar />
-            <main className="flex-grow p-6">{children}</main>
-            <Analytics />
-            <SpeedInsights/>
-          </div>
-          <Footer />
-        </SidebarProvider>
+       <Providers>
+        {children}
+       </Providers>
       </body>
     </html>
   );
