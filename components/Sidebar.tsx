@@ -48,7 +48,7 @@ const Sidebar = () => {
               <FaRegCopy className="text-2xl text-[var(--icon-color)] hover:text-[var(--text-color)]" />
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/github">
                 <FaGithub className="text-2xl text-[var(--icon-color)] hover:text-[var(--text-color)]" />
               </Link>
             </li>

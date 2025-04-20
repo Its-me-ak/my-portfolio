@@ -4,7 +4,6 @@ import Experience from "@/components/about/Experience";
 import Me from "@/components/about/Me";
 import { useSidebar } from "@/context/SidebarContext";
 import React from "react";
-import GitHubCalendar from 'react-github-calendar';
 
 const AboutPage = () => {
   const { isSidebarOpen } = useSidebar();
@@ -16,21 +15,6 @@ const AboutPage = () => {
         <Experience />
         <Education />
       </div>
-
-      <div className="lg:w-full w-[340px] sm:w-[560px] md:w-[700px] pt-16">
-        <h2 className="text-xl font-semibold mb-4 text-white">GitHub Contributions</h2>
-
-        <div className="overflow-x-auto rounded-lg p-4 bg-[#122738]">
-          <GitHubCalendar
-            username="its-me-ak"
-            blockSize={16}
-            blockMargin={5}
-            fontSize={14}
-            colorScheme="dark"
-          />
-        </div>
-      </div>
-
     </main>
   );
 };
