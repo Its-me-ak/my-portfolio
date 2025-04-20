@@ -136,17 +136,17 @@ body {
   --bg-text: #1a1626;
   --text-color: #efefef;
   --accent-color: #f800d3;
-  --titlebar-bg: #1e1e3f;
-  --sidebar-bg: #2a2139;
+  --titlebar-bg: #241b2f;
+  --sidebar-bg: #171520;
   --sidebar-hover-bg: #3a2f5b;
-  --explorer-bg: #2a2139;
+  --explorer-bg: #241b2f;
   --explorer-hover-bg: #372d52;
   --explorer-border: #4d2f91;
   --tabs-bg: #1e1e3f;
   --tab-bg: #2a2139;
   --tab-active-bg: #4b3c69;
   --tab-border: #f800d3;
-  --bottombar-bg: #1e1e3f;
+  --bottombar-bg: #241b2f;
   --bottombar-border: #4d2f91;
   --button-bg: #f800d3;
   --button-text: #ffffff;
@@ -154,7 +154,7 @@ body {
   --scrollbar-track-bg: #1a1626;
   --scrollbar-thumb-bg: #4b3c69;
   --article-bg: #201833;
-  --icon-color: #9870f8;
+  --icon-color: #c0a4ff;
 }
 
 /* Nord */
