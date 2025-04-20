@@ -73,7 +73,7 @@ const Sidebar = () => {
             </li>
             <li>
               <Link href="/settings">
-              <IoSettingsOutline className="text-2xl text-[var(--icon-color)] hover:text-[var(--text-color)]" />
+                <IoSettingsOutline className="text-2xl text-[var(--icon-color)] hover:text-[var(--text-color)]" />
               </Link>
             </li>
           </ul>
@@ -125,6 +125,12 @@ const Sidebar = () => {
                     height={15}
                   />
                   <span className="ml-2">projects.py</span>
+                </li>
+              </Link>
+              <Link href={"/github"}>
+                <li className="hover:bg-[var(--explorer-hover-bg)] cursor-pointer px-5 py-1 flex items-center my-2">
+                  <Image src={'/assests/markdown_icon.svg'} alt="" width={20} height={20}/>
+                  <span className="ml-2">github.md</span>
                 </li>
               </Link>
             </ul>
