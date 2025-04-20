@@ -23,8 +23,35 @@ body {
   }
 }
 
-/* GitHub Dark */
+/* Cobalt2 */
 :root {
+  --main-bg: #193549;
+  --bg-text: #1c3a54;
+  --text-color: #efefef;
+  --accent-color: #e6b400;
+  --titlebar-bg: #002240;
+  --sidebar-bg: #002240;
+  --sidebar-hover-bg: #00325b;
+  --explorer-bg: #00325b;
+  --explorer-hover-bg: #004c87;
+  --explorer-border: #144d75;
+  --tabs-bg: #002240;
+  --tab-bg: #00325b;
+  --tab-active-bg: #003f70;
+  --tab-border: #00325b;
+  --bottombar-bg: #002240;
+  --bottombar-border: #00325b;
+  --button-bg: #ffc600;
+  --button-text: #000000;
+  --bottombar-hover-bg: #00325b;
+  --scrollbar-track-bg: #002b40;
+  --scrollbar-thumb-bg: #144d75;
+  --article-bg: #0c2c42;
+  --icon-color: #94ddf0;
+}
+
+/* GitHub Dark */
+[data-theme="github-dark"] {
   --main-bg: #24292e;
   --bg-text: rgba(56, 58, 61, 0.35);
   --text-color: #efefef;
@@ -104,31 +131,30 @@ body {
   --icon-color: #383d45;
 }
 
-/* Ayu Mirage */
-[data-theme='ayu-mirage'] {
-  --main-bg: #1f2430;
-  --bg-text: #21242b;
+[data-theme='synthwave84'] {
+  --main-bg: #2a2139;
+  --bg-text: #1a1626;
   --text-color: #efefef;
-  --accent-color: #e6b450;
-  --titlebar-bg: #1f2428;
-  --sidebar-bg: #1f2430;
-  --sidebar-hover-bg: #191e2a;
-  --explorer-bg: #1f2430;
-  --explorer-hover-bg: #191e2a;
-  --explorer-border: transparent;
-  --tabs-bg: #1f2430;
-  --tab-bg: #1f2430;
-  --tab-active-bg: #1f2430;
-  --tab-border: transparent;
-  --bottombar-bg: #1f2430;
-  --bottombar-border: transparent;
-  --button-bg: #e6b450;
-  --button-text: #1f2430;
-  --bottombar-hover-bg: #4f4f52;
-  --scrollbar-track-bg: #1f2430;
-  --scrollbar-thumb-bg: #454647;
-  --article-bg: #252e3d;
-  --icon-color: #4f5767;
+  --accent-color: #f800d3;
+  --titlebar-bg: #1e1e3f;
+  --sidebar-bg: #2a2139;
+  --sidebar-hover-bg: #3a2f5b;
+  --explorer-bg: #2a2139;
+  --explorer-hover-bg: #372d52;
+  --explorer-border: #4d2f91;
+  --tabs-bg: #1e1e3f;
+  --tab-bg: #2a2139;
+  --tab-active-bg: #4b3c69;
+  --tab-border: #f800d3;
+  --bottombar-bg: #1e1e3f;
+  --bottombar-border: #4d2f91;
+  --button-bg: #f800d3;
+  --button-text: #ffffff;
+  --bottombar-hover-bg: #372d52;
+  --scrollbar-track-bg: #1a1626;
+  --scrollbar-thumb-bg: #4b3c69;
+  --article-bg: #201833;
+  --icon-color: #9870f8;
 }
 
 /* Nord */

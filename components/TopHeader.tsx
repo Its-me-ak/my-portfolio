@@ -18,7 +18,7 @@ const TopHeader = () => {
         <Link href={"/projects"}>Projects</Link>
         <Link href={"/contact"}>contact</Link>
       </ul>
-      <h3 className='capitalize text-[var(--text-color)] text-sm'>
+      <h3 className='capitalize text-[var(--text-color)] text-sm md:flex hidden'>
         mohd aquib - visual studio code
       </h3>
         <ul className='md:flex hidden'>

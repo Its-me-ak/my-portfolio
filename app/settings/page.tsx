@@ -3,9 +3,9 @@ import ThemeInfo from "@/components/ThemeInfo";
 import { useSidebar } from "@/context/SidebarContext";
 
 const SettingsPage = () => {
-    const { isSidebarOpen } = useSidebar();
+  const { isSidebarOpen } = useSidebar();
   return (
-      <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-10 pb-2`}>
+    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-10 pb-2`}>
       <div
         className="
           w-full 
@@ -20,6 +20,12 @@ const SettingsPage = () => {
           xs:p-2
         "
       >
+        <ThemeInfo
+          name="Cobalt2"
+          icon="/assests/cobalt2.jpg"
+          publisher="wes bos"
+          theme="cobalt2"
+        />
         <ThemeInfo
           name="GitHub Dark"
           icon="/assests/github-dark.png"
@@ -42,7 +48,7 @@ const SettingsPage = () => {
           name="Ayu Mirage"
           icon="/assests/ayu.png"
           publisher="teabyii"
-          theme="ayu-mirage"
+          theme="synthwave84"
         />
         <ThemeInfo
           name="Nord"
