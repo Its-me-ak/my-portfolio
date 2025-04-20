@@ -23,7 +23,7 @@ const SettingsPage = () => {
         <ThemeInfo
           name="Cobalt2"
           icon="/assests/cobalt2.jpg"
-          publisher="wes bos"
+          publisher="Wes Bos"
           theme="cobalt2"
         />
         <ThemeInfo
@@ -45,9 +45,9 @@ const SettingsPage = () => {
           theme="ayu-dark"
         />
         <ThemeInfo
-          name="Ayu Mirage"
-          icon="/assests/ayu.png"
-          publisher="teabyii"
+          name="SynthWave '84"
+          icon="/assests/synthwave84.jpg"
+          publisher="Robb Owen"
           theme="synthwave84"
         />
         <ThemeInfo
