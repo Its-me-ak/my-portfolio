@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 import {
   SiJavascript,
-  SiTypescript,
   SiReact,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
