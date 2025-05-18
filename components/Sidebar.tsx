@@ -187,12 +187,6 @@ const Sidebar = () => {
                   <span className="ml-2">Manga.vue</span>
                 </li>
               </Link>
-              <Link href={"/learning"}>
-                <li className="hover:bg-[var(--explorer-hover-bg)] cursor-pointer px-5 py-1 flex items-center my-2">
-                  <SiTypescript className="text-[#007acc]" />
-                  <span className="ml-2">Learning.tsx</span>
-                </li>
-              </Link>
             </ul>
           )}
         </div>

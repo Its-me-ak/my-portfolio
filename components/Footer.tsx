@@ -29,7 +29,7 @@ const Footer = () => {
   });
 
   return (
-    <div className="flex justify-between text-xs items-center px-2 bg-[var(--bottombar-bg)] border-t border-bottombar fixed z-50 w-full bottom-0">
+    <div className="flex justify-between text-xs items-center px-2 bg-[var(--bottombar-bg)] border-t border-bottombar fixed z-[999] w-full bottom-0">
       <ul className="flex gap-2 items-center text-gray-300">
         <li className="p-1 hover:bg-[var(--bottombar-hover-bg)] cursor-pointer">Build in:</li>
         <li className="p-1 hover:bg-[var(--bottombar-hover-bg)] cursor-pointer">NextJs</li>

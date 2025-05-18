@@ -5,7 +5,7 @@ import { useSidebar } from "@/context/SidebarContext";
 const SettingsPage = () => {
   const { isSidebarOpen } = useSidebar();
   return (
-    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-10 pb-2`}>
+    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-10 pb-10`}>
       <div
         className="
           w-full 
