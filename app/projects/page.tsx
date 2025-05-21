@@ -43,6 +43,7 @@ const projects = [
       "React",
       "NextJS",
       "TypeScript",
+      "Shadcn",
       "Zustand",
       "Kinde",
       "Redis",
