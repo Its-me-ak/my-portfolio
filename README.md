@@ -1,8 +1,6 @@
-
-```markdown
 # My Portfolio 🚀
 
-A personal portfolio website built with Next.js and TypeScript.
+A personal portfolio website built with Next.js, Tailwind CSS, and TypeScript.
 
 ## About ℹ️
 
