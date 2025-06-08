@@ -22,7 +22,7 @@ const MediaCard: React.FC<MangaCardProps> = ({media}) => {
               quality={70} 
   loading="lazy"
             />
-          <div className="absolute top-0 left-0 h-full w-full bg-black/30 rounded-lg"></div>
+          <div className="absolute top-0 left-0 h-full w-full bg-black/20 rounded-lg"></div>
           <div className="w-full absolute bottom-2 left-2 p-1 z-10">
             <h1 className="text-lg font-semibold capitalize">{media.title}</h1>
           </div>

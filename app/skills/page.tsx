@@ -1,6 +1,6 @@
 "use client";
 import { useSidebar } from "@/context/SidebarContext";
-import SkillSection from "@/components/skills/SkillSection"
+import SkillSection from "@/components/skills/SkillSection";
 import React from "react";
 
 const SkillsPage = () => {
@@ -40,19 +40,24 @@ const SkillsPage = () => {
       link: "https://react.dev/",
     },
     {
-      name: "Redux",
-      icon: "/assests/redux.svg",
-      link: "https://redux-toolkit.js.org/",
-    },
-    {
       name: "Next.js",
       icon: "/assests/nextjs.svg",
       link: "https://nextjs.org/",
     },
     {
+      name: "Redux",
+      icon: "/assests/redux.svg",
+      link: "https://redux-toolkit.js.org/",
+    },
+    {
       name: "React Query",
       icon: "/assests/react-query.png",
       link: "https://tanstack.com/query/latest",
+    },
+    {
+      name: "Zustand",
+      icon: "/assests/zustand.png",
+      link: "https://zustand-demo.pmnd.rs/",
     },
     {
       name: "Node.js",
@@ -147,7 +152,7 @@ const SkillsPage = () => {
       icon: "/assests/netlify.svg",
       link: "https://www.netlify.com/",
     },
-        {
+    {
       name: "Render",
       icon: "/assests/render.svg",
       link: "https://render.com/",
@@ -171,7 +176,9 @@ const SkillsPage = () => {
   ];
 
   return (
-    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
+    <main
+      className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}
+    >
       <h1 className="md:text-4xl text-3xl font-bold">My Advantages</h1>
       <p className="text-sm text-gray-300 leading-6 mt-3">
         I bring a unique blend of creativity and technical expertise, ensuring

@@ -3,7 +3,6 @@ import React from "react";
 import { useSidebar } from "@/context/SidebarContext";
 import ProjectCard from "@/components/project/ProjectCard";
 
-// Sample Projects Array
 const projects = [
   {
     title: "X Clone",
@@ -20,6 +19,7 @@ const projects = [
       "Socket.io",
       "React Query",
       "JWT",
+      "Middleware",
     ],
     liveLink: "https://twtter-mern-project.onrender.com/",
     githubLink: "https://github.com/Its-me-ak/twtter-mern-project",
@@ -80,6 +80,25 @@ const projects = [
     ],
     liveLink: "https://frequentresearch.com/",
     githubLink: "https://github.com/Its-me-ak",
+  },
+  {
+    title: "AuthFlow",
+    description:
+      "AuthFlow is a full-stack authentication system that provides essential features like user registration, login, logout, password reset, and email verification. It’s built with a focus on user experience and security.",
+    image: "/assests/p31.png",
+    technologies: [
+      "Tailwind",
+      "React",
+      "Zustand",
+      "Motion",
+      "Node",
+      "ExpressJS",
+      "MongoDB",
+      "JWT",
+      "Middleware",
+    ],
+    liveLink: "https://authflow.xyz/",
+    githubLink: "https://github.com/Its-me-ak/AuthFlow",
   },
   {
     title: "VEI Institute",

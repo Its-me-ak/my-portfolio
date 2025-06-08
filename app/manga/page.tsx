@@ -48,6 +48,14 @@ const MangaPage = () => {
             title: "kaiju no. 8",
             image: "/assests/kj.jpg",
         },
+        {
+            title:"Eleceed",
+            image: "/assests/eleceed.jpeg",
+        },
+        {
+            title: "Lookism",
+            image: "/assests/lookism.jpg",
+        }
       ]
     
     return (
