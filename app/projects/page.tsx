@@ -33,26 +33,6 @@ const projects = [
     liveLink: "https://filmfolio-movie-website.vercel.app/",
     githubLink: "https://github.com/Its-me-ak/FilmFolio-Redux",
   },
-  {
-    title: "Sonic Chat App",
-    description:
-      "This project is a real-time chat application built with NExtJS, TypeScript, and Redis. It allows users to sign in, send and receive messages instantly, and enjoy a smooth, responsive chatting experience.",
-    image: "/assests/p7.png",
-    technologies: [
-      "Tailwind",
-      "React",
-      "NextJS",
-      "TypeScript",
-      "Shadcn",
-      "Zustand",
-      "Kinde",
-      "Redis",
-      "Upstash",
-      "Pusher",
-    ],
-    liveLink: "https://sonic-chat.vercel.app/",
-    githubLink: "https://github.com/Its-me-ak/sonic-chat",
-  },
 
   {
     title: "Weather App",
