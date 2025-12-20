@@ -1,5 +1,5 @@
 "use client";
-import CardBox from "@/components/CardBox";
+import AnimeVideoCard from "@/components/AnimeVideoCard";
 import { useSidebar } from "@/context/SidebarContext";
 
 const AnimePage = () => {
@@ -8,124 +8,134 @@ const AnimePage = () => {
   const animeData = [
     {
       title: "Bleach",
-      videoUrl: "assests/video/bleach-anime.mp4"
+      videoId: "bleach-anime_gtx188",
     },
     {
       title: "Naruto",
-      videoUrl: "assests/video/naruto.mp4"
+      videoId: "naruto_cv8vb3",
     },
     {
       title: "dragon ball super",
-      videoUrl: "assests/video/dbs.mp4"
+      videoId: "dbs_swuz6t",
     },
     {
       title: "dragon ball z",
-      videoUrl: "assests/video/dbz.mp4"
+      videoId: "dbz_ygttf6",
     },
     {
       title: "Attack on titan",
-      videoUrl: "assests/video/aot.mp4"
+      videoId: "aot_estq7u",
     },
     {
       title: "demon slayer",
-      videoUrl: "assests/video/ds.mp4"
+      videoId: "ds_ynbclv",
     },
     {
       title: "black clover",
-      videoUrl: "assests/video/bc.mp4"
+      videoId: "bc_jz6jag",
     },
     {
       title: "jujutsu kaisen",
-      videoUrl: "assests/video/jjk.mp4"
+      videoId: "jjk_tkpen7",
     },
     {
       title: "one punch man",
-      videoUrl: "assests/video/opm.mp4"
+      videoId: "opm_jll6bo",
     },
     {
       title: "hunter x hunter",
-      videoUrl: "assests/video/hxh.mp4"
+      videoId: "hxh_cdrl3u",
     },
     {
       title: "death note",
-      videoUrl: "assests/video/death-note.mp4"
+      videoId: "death-note_wigj2i",
     },
     {
       title: "vinland saga",
-      videoUrl: "assests/video/vinland.mp4"
+      videoId: "vinland_fehqh2",
     },
     {
       title: "Monster",
-      videoUrl: "assests/video/Johan_Liebert.mp4"
+      videoId: "Johan_Liebert_zehrn9",
     },
     {
       title: "kaiju no. 8",
-      videoUrl: "assests/video/Kaiju_No_8.mp4"
+      videoId: "Kaiju_No_8_ebr3sh",
     },
     {
       title: "fire force",
-      videoUrl: "assests/video/Fire_Force.mp4"
+      videoId: "Fire_Force_xn1dkc",
     },
     {
       title: "spy family",
-      videoUrl: "assests/video/spy-family.mp4"
+      videoId: "spy-family_r0ned9",
     },
 
     {
       title: "solo leveling",
-      videoUrl: "assests/video/solo-leveling.mp4"
+      videoId: "solo-leveling_ibnvuu",
     },
     {
       title: "chainsaw man",
-      videoUrl: "assests/video/chainsawmen.mp4"
+      videoId: "chainsawmen_ghbnfo",
     },
     {
       title: "boruto",
-      videoUrl: "assests/video/boruto.mp4"
+      videoId: "boruto_ckes80",
     },
     {
       title: "blue lock",
-      videoUrl: "assests/video/bl.mp4"
+      videoId: "bl_pibvza",
     },
     {
       title: "tokyo ghoul",
-      videoUrl: "assests/video/tg.mp4"
+      videoId: "tg_emyau0",
     },
     {
       title: "that time i got reincarnated as a slime",
-      videoUrl: "assests/video/slime.mp4"
+      videoId: "slime_unnhjt",
     },
     {
       title: "dandadan",
-      videoUrl: "assests/video/dandadan.mp4"
+      videoId: "dandadan_ddsuvy",
     },
     {
       title: "dororo",
-      videoUrl: "assests/video/dororo.mp4"
+      videoId: "dororo_r1bfu0",
     },
     {
       title: "mushoku tensei",
-      videoUrl: "assests/video/mt.mp4"
+      videoId: "mt_ttibzg",
     },
     {
       title: "haikyu",
-      videoUrl: "assests/video/haiyku.mp4"
+      videoId: "haiyku_rftb5o",
     },
-  ]
+  ];
   return (
-    <main className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}>
+    <main
+      className={`${isSidebarOpen ? "lg:ml-80 ml-12" : "ml-12"}  mt-20 pb-20`}
+    >
       <div className="mb-10">
-        <h1 className="md:text-4xl text-3xl font-bold text-white mb-2 leading-normal">Living Between Reality and Anime</h1>
-        <p className="text-sm">Whether its action, mystery, or heartwarming moments, anime has a way of capturing emotions like nothing else. Sometimes I watch, sometimes I rewatch—but I’m always part of this universe.</p>
+        <h1 className="md:text-4xl text-3xl font-bold text-white mb-2 leading-normal">
+          Living Between Reality and Anime
+        </h1>
+        <p className="text-sm">
+          Whether its action, mystery, or heartwarming moments, anime has a way
+          of capturing emotions like nothing else. Sometimes I watch, sometimes
+          I rewatch—but I’m always part of this universe.
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {animeData.map((anime) => (
+        {/* {animeData.map((anime) => (
           <CardBox key={anime.title} anime={anime} />
+        ))} */}
+        {animeData.map((anime) => (
+          <AnimeVideoCard key={anime.title} {...anime} />
         ))}
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default AnimePage
-
+export default AnimePage;
