@@ -25,6 +25,28 @@ const projects = [
     githubLink: "https://github.com/Its-me-ak/twtter-mern-project",
   },
   {
+    title: "AI Resume Builder",
+    description:
+      "An AI-powered full-stack Resume Builder that helps users create, enhance, and optimize professional resumes using smart AI suggestions, modern templates, and PDF export",
+    image: "/assests/p2.png",
+    technologies: [
+      "Tailwind",
+      "PrebultUI",
+      "React",
+      "Node",
+      "ExpressJS",
+      "MongoDB",
+      "Redux-Toolkit",
+      "Imagekit",
+      "JWT",
+      "Middleware",
+      "Gemini AI",
+      "Rate Limiter",
+    ],
+    liveLink: "https://resume-builder-v5d0.onrender.com/",
+    githubLink: "https://github.com/Its-me-ak/resume-builder",
+  },
+  {
     title: "Movie App",
     description:
       "This project is a movie website built with React and Redux, and fetches data from the TMDB API to display movie details, cast, and crew information.",
